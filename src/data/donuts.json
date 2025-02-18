@@ -1,0 +1,142 @@
+[
+  {
+    "id": "d1",
+    "name": "Caramel Glaze",
+    "image": "/images/d1.jpg",
+    "category": "Classic",
+    "description": "Smooth caramel-glazed donut with a rich taste."
+  },
+  {
+    "id": "d2",
+    "name": "White Frosting",
+    "image": "/images/d2.jpg",
+    "category": "Classic",
+    "description": "Soft donut covered in a creamy white frosting."
+  },
+  {
+    "id": "d3",
+    "name": "Chocolate Sprinkle",
+    "image": "/images/d3.jpg",
+    "category": "Chocolate",
+    "description": "Chocolate donut topped with white sprinkles."
+  },
+  {
+    "id": "d4",
+    "name": "Rainbow Sprinkles",
+    "image": "/images/d4.jpg",
+    "category": "Fun",
+    "description": "White-frosted donut with colorful sprinkles."
+  },
+  {
+    "id": "d5",
+    "name": "Chocolate Mint",
+    "image": "/images/d5.jpg",
+    "category": "Specialty",
+    "description": "Green mint frosting with chocolate chips."
+  },
+  {
+    "id": "d6",
+    "name": "Bananalicious",
+    "image": "/images/d6.jpg",
+    "category": "Fruity",
+    "description": "Banana-flavored frosting with dried banana and chocolate."
+  },
+  {
+    "id": "d7",
+    "name": "Blue Star",
+    "image": "/images/d7.jpg",
+    "category": "Fun",
+    "description": "Blue frosting with white star chocolate sprinkles."
+  },
+  {
+    "id": "d8",
+    "name": "Pink Pearls",
+    "image": "/images/d8.jpg",
+    "category": "Fun",
+    "description": "Pink frosting with pink sugar sprinkles."
+  },
+  {
+    "id": "d9",
+    "name": "Rainbow Frosting",
+    "image": "/images/d9.jpg",
+    "category": "Fun",
+    "description": "A vibrant mix of rainbow-colored frosting."
+  },
+  {
+    "id": "d10",
+    "name": "Strawberry Frosting",
+    "image": "/images/d10.jpg",
+    "category": "Fruity",
+    "description": "Sweet strawberry-flavored frosting."
+  },
+  {
+    "id": "d11",
+    "name": "Purple Frosting",
+    "image": "/images/d11.jpg",
+    "category": "Fun",
+    "description": "Bright purple frosting with a smooth finish."
+  },
+  {
+    "id": "d12",
+    "name": "Sugar Glaze",
+    "image": "/images/d12.jpg",
+    "category": "Classic",
+    "description": "Glazed donut with white frosting stripes."
+  },
+  {
+    "id": "d13",
+    "name": "Yellow Mellow",
+    "image": "/images/d13.jpg",
+    "category": "Fruity",
+    "description": "Lemon frosting with white sprinkles."
+  },
+  {
+    "id": "d14",
+    "name": "Cookie Doughnut",
+    "image": "/images/d14.jpg",
+    "category": "Specialty",
+    "description": "Chocolate chip cookie-flavored frosting."
+  },
+  {
+    "id": "d15",
+    "name": "Coconut",
+    "image": "/images/d15.jpg",
+    "category": "Tropical",
+    "description": "White frosting topped with coconut flakes."
+  },
+  {
+    "id": "d16",
+    "name": "Green Frosting",
+    "image": "/images/d16.jpg",
+    "category": "Fun",
+    "description": "Bright green frosting with a sweet taste."
+  },
+  {
+    "id": "d17",
+    "name": "Hazelnut",
+    "image": "/images/d17.jpg",
+    "category": "Nutty",
+    "description": "Rich hazelnut frosting with crunchy sprinkles."
+  },
+  {
+    "id": "d18",
+    "name": "Pumpkin",
+    "image": "/images/d18.jpg",
+    "category": "Seasonal",
+    "description": "Pumpkin-flavored frosting with warm spices."
+  },
+  {
+    "id": "d19",
+    "name": "Pink & Blue",
+    "image": "/images/d19.jpg",
+    "category": "Fun",
+    "description": "Pink and blue frosting with matching sprinkles."
+  },
+  {
+    "id": "d20",
+    "name": "Black & White",
+    "image": "/images/d20.jpg",
+    "category": "Classic",
+    "description": "A mix of black and white frosting with sprinkles."
+  }
+]
