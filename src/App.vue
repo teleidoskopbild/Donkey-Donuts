@@ -13,59 +13,63 @@
         <!-- Normale Navigation für größere Bildschirme -->
         <ul class="hidden md:flex space-x-6 justify-center text-white text-xl">
           <li>
-            <router-link to="/" class="hover:text-gray-400">Home</router-link>
+            <router-link to="/" class="hover:font-bold">Home</router-link>
           </li>
           <li>
-            <router-link to="/donuts" class="hover:text-gray-400"
+            <router-link to="/donuts" class="hover:font-bold"
               >Donuts</router-link
             >
           </li>
           <li>
-            <router-link to="/rolls" class="hover:text-gray-400"
-              >Rolls</router-link
-            >
+            <router-link to="/rolls" class="hover:font-bold">Rolls</router-link>
           </li>
           <li>
-            <router-link to="/cookies" class="hover:text-gray-400"
+            <router-link to="/cookies" class="hover:font-bold"
               >Cookies</router-link
             >
           </li>
           <li>
-            <router-link to="/cold-drinks" class="hover:text-gray-400"
+            <router-link to="/cold-drinks" class="hover:font-bold"
               >Cold Drinks</router-link
             >
           </li>
           <li>
-            <router-link to="/warm-beverages" class="hover:text-gray-400"
+            <router-link to="/warm-beverages" class="hover:font-bold"
               >Warm Beverages</router-link
             >
           </li>
         </ul>
-
         <!-- Hamburger Button für kleine Bildschirme -->
-        <button @click="toggleMenu" class="md:hidden text-white">
-          <!-- Hamburger -->
-          <div v-if="!isOpen" class="w-6 h-1 bg-white mb-1"></div>
-          <div v-if="!isOpen" class="w-6 h-1 bg-white mb-1"></div>
-          <div v-if="!isOpen" class="w-6 h-1 bg-white mb-1"></div>
+        <div class="flex items-center justify-between">
+          <button @click="toggleMenu" class="md:hidden text-white">
+            <!-- Hamburger -->
+            <div v-if="!isOpen" class="w-6 h-1 bg-white mb-1"></div>
+            <div v-if="!isOpen" class="w-6 h-1 bg-white mb-1"></div>
+            <div v-if="!isOpen" class="w-6 h-1 bg-white mb-1"></div>
 
-          <!-- (X) -->
-          <div
-            v-if="isOpen"
-            class="w-7 h-1 bg-white transform rotate-45 -mb-1"
-          ></div>
-          <div
-            v-if="isOpen"
-            class="w-7 h-1 bg-white transform -rotate-45"
-          ></div>
-        </button>
+            <!-- (X) -->
+            <div
+              v-if="isOpen"
+              class="w-7 h-1 bg-white transform rotate-45 -mb-1"
+            ></div>
+            <div
+              v-if="isOpen"
+              class="w-7 h-1 bg-white transform -rotate-45"
+            ></div>
+          </button>
+          <span
+            class="md:hidden text-xl text-white font-bold absolute left-1/2 transform -translate-x-1/2"
+          >
+            Donkey Donuts
+          </span>
+        </div>
 
         <!-- Dropdown Menu für kleine Bildschirme -->
         <ul v-if="isOpen" class="md:hidden text-center mt-4">
           <li>
             <router-link
               to="/"
-              class="block py-2 px-4 text-white"
+              class="block py-2 px-4 text-white hover:font-bold"
               @click="toggleMenu"
               >Home</router-link
             >
@@ -73,7 +77,7 @@
           <li>
             <router-link
               to="/donuts"
-              class="block py-2 px-4 text-white"
+              class="block py-2 px-4 text-white hover:font-bold"
               @click="toggleMenu"
               >Donuts</router-link
             >
@@ -81,7 +85,7 @@
           <li>
             <router-link
               to="/rolls"
-              class="block py-2 px-4 text-white"
+              class="block py-2 px-4 text-white hover:font-bold"
               @click="toggleMenu"
               >Rolls</router-link
             >
@@ -89,7 +93,7 @@
           <li>
             <router-link
               to="/cookies"
-              class="block py-2 px-4 text-white"
+              class="block py-2 px-4 text-white hover:font-bold"
               @click="toggleMenu"
               >Cookies</router-link
             >
@@ -97,7 +101,7 @@
           <li>
             <router-link
               to="/cold-drinks"
-              class="block py-2 px-4 text-white"
+              class="block py-2 px-4 text-white hover:font-bold"
               @click="toggleMenu"
               >Cold Drinks</router-link
             >
@@ -105,7 +109,7 @@
           <li>
             <router-link
               to="/warm-beverages"
-              class="block py-2 px-4 text-white"
+              class="block py-2 px-4 text-white hover:font-bold"
               @click="toggleMenu"
               >Warm Beverages</router-link
             >
