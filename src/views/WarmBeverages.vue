@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "Warm-Beverages",
+  name: "WarmBeverages",
 };
 </script>
 
