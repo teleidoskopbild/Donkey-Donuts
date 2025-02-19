@@ -1,0 +1,51 @@
+[
+  {
+    "id": "r1",
+    "name": "Cinnamon",
+    "image": "/images/rolls/r1.jpg",
+    "category": "Classic",
+    "description": "Delicious Cinnamon Roll"
+  },
+  {
+    "id": "r2",
+    "name": "Hazelnut",
+    "image": "/images/rolls/r2.jpg",
+    "category": "Nutty",
+    "description": "Rich Hazelnut Roll"
+  },
+  {
+    "id": "r3",
+    "name": "White Frosting",
+    "image": "/images/rolls/r3.jpg",
+    "category": "Classic",
+    "description": "White Frosting Roll"
+  },
+  {
+    "id": "r4",
+    "name": "Blueberry",
+    "image": "/images/rolls/r4.jpg",
+    "category": "Fruity",
+    "description": "Blueberry Roll."
+  },
+  {
+    "id": "r5",
+    "name": "Cherry",
+    "image": "/images/rolls/r5.jpg",
+    "category": "Fruity",
+    "description": "Cherry Roll with white Frosting."
+  },
+  {
+    "id": "r6",
+    "name": "Lemon",
+    "image": "/images/rolls/r6.jpg",
+    "category": "Fruity",
+    "description": "Lemon Roll with white Frosting."
+  },
+  {
+    "id": "r7",
+    "name": "Mint",
+    "image": "/images/rolls/r7.jpg",
+    "category": "Minty",
+    "description": "Mint Roll with white Frosting."
+  }
+]

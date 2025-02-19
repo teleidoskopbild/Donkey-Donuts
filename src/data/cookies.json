@@ -1,0 +1,79 @@
+[
+  {
+    "id": "c1",
+    "name": "White Chocolate",
+    "image": "/images/cookies/cookie1.jpg",
+    "category": "Classic",
+    "description": "Smooth white chocolate cookie."
+  },
+  {
+    "id": "c2",
+    "name": "Caramel Glaze",
+    "image": "/images/cookies/cookie2.jpg",
+    "category": "Classic",
+    "description": "Soft cookie with a caramel glaze."
+  },
+  {
+    "id": "c3",
+    "name": "Cherry Chocolate",
+    "image": "/images/cookies/cookie3.jpg",
+    "category": "Chocolate",
+    "description": "Chocolate chip cookie with cherry topping."
+  },
+  {
+    "id": "c4",
+    "name": "Blueberry",
+    "image": "/images/cookies/cookie4.jpg",
+    "category": "Classic",
+    "description": "Blueberry cookie with blueberries."
+  },
+  {
+    "id": "c5",
+    "name": "Chocolate Chip",
+    "image": "/images/cookies/cookie5.jpg",
+    "category": "Chocolate",
+    "description": "Chocolate chip cookie."
+  },
+  {
+    "id": "c6",
+    "name": "Cashews",
+    "image": "/images/cookies/cookie6.jpg",
+    "category": "Nutty",
+    "description": "Cookie with lots of Chashews."
+  },
+  {
+    "id": "c7",
+    "name": "Coconut",
+    "image": "/images/cookies/cookie7.jpg",
+    "category": "Nutty",
+    "description": "Coconut-flavored cookie with coconut icing"
+  },
+  {
+    "id": "c8",
+    "name": "Rainbow Candy",
+    "image": "/images/cookies/cookie8.jpg",
+    "category": "Classic",
+    "description": "Cookie with colorful chocolate lentils."
+  },
+  {
+    "id": "c9",
+    "name": "Brownie Chip",
+    "image": "/images/cookies/cookie9.jpg",
+    "category": "Chocolate",
+    "description": "Cookie with brownie pieces"
+  },
+  {
+    "id": "c10",
+    "name": "Chocolate Mint",
+    "image": "/images/cookies/cookie10.jpg",
+    "category": "Minty",
+    "description": "Chocolate chip cookie with mint filling."
+  },
+  {
+    "id": "c11",
+    "name": "Double Chocolate",
+    "image": "/images/cookies/cookie11.jpg",
+    "category": "Chocolate",
+    "description": "Chocolate cookie with chocolate chips."
+  }
+]

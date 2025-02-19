@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cd1",
+    "name": "Vanilla Frappe",
+    "image": "/images/cold/cold1.jpg",
+    "category": "Classic",
+    "description": "Smooth vanilla-flavored iced coffee."
+  },
+  {
+    "id": "cd2",
+    "name": "Hazelnut Frappe",
+    "image": "/images/cold/cold2.jpg",
+    "category": "Nutty",
+    "description": "Iced coffee with a rich hazelnut taste."
+  },
+  {
+    "id": "cd3",
+    "name": "Chocolate Frappe",
+    "image": "/images/cold/cold3.jpg",
+    "category": "Chocolate",
+    "description": "Creamy chocolate iced coffee."
+  },
+  {
+    "id": "cd4",
+    "name": "Dark Chocolate Frappe",
+    "image": "/images/cold/cold4.jpg",
+    "category": "Chocolate",
+    "description": "Bold dark chocolate iced coffee."
+  }
+]
