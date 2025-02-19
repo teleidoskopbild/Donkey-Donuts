@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4">
+  <div class="p-4 mb-30">
     <h1 class="text-2xl font-bold mb-4 text-center">Rolls</h1>
     <div class="flex flex-wrap justify-center gap-4">
       <div
