@@ -11,14 +11,14 @@
     <div v-else>
       <nav class="bg-blue-500 p-8">
         <!-- Normale Navigation für größere Bildschirme -->
-        <div class="flex items-center">
+        <div class="flex md:items-center lg:justify-between">
           <span
             class="hidden text-xl md:block md:text-2xl text-white font-bold"
           >
             Donkey Donuts
           </span>
           <ul
-            class="hidden md:flex space-x-6 justify-center text-white md:text-xl absolute left-1/2 transform -translate-x-1/2"
+            class="hidden md:flex space-x-6 md:justify-end lg:justify-start text-white md:text-xl absolute left-1/2 transform -translate-x-1/2"
           >
             <!-- <li>
               <router-link to="/" class="hover:font-bold">Home</router-link>
@@ -132,19 +132,19 @@
       <router-view />
     </div>
 
-    <footer class="bg-blue-500 p-10 fixed bottom-0 w-full text-white">
+    <footer class="bg-blue-500 p-4 fixed bottom-0 w-full text-white">
       <div
-        class="flex flex-col content-end lg:justify-between lg:flex-row"
+        class="flex flex-col content-end sm:justify-between md:flex-row"
         @click="toggleLocations"
         @mouseleave="locationsVisible && toggleLocations()"
       >
-        <div class="sm:flex sm:justify-center hidden sm:block sm:mb-4">
+        <div class="md:justify-center hidden md:block md:mb-4">
           <h3 class="text-xl font-bold">Donkey Donuts</h3>
-          <p class="hidden">The best donuts in town!</p>
+          <p class="hidden md:block">The best donuts in town!</p>
         </div>
 
         <div
-          class="text-base mb-6 md:mb-0 md:items-center cursor-pointer md:fixed md:left-1/2 md:transform md:-translate-x-1/2 md:text-lg"
+          class="text-base mb-6 md:mb-0 items-center md:items-center cursor-pointer md:fixed md:left-1/2 md:transform md:-translate-x-1/2 md:text-lg"
         >
           <ul>
             <li class="hidden md:block text-center">
@@ -159,9 +159,9 @@
             </li>
           </ul>
         </div>
-        <div v-if="locationsVisible" class="-mt-6">
+        <div v-if="locationsVisible">
           <ul
-            class="text-base mb-4 text-xs text-center fixed sm:left-1/2 transform sm:-translate-x-1/2 sm:text-base"
+            class="text-base text-center fixed left-1/2 transform -translate-x-1/2"
           >
             <li>Main Street 15, Berlin</li>
             <li>Donut Way 12, Hamburg</li>
