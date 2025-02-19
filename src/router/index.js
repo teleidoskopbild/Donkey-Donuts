@@ -9,23 +9,12 @@ import Cookies from "../views/Cookies.vue";
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    redirect: "/donuts",
   },
   {
     path: "/donuts",
     name: "Donuts",
     component: Donuts,
-  },
-  {
-    path: "/cold-drinks",
-    name: "ColdDrinks",
-    component: ColdDrinks,
-  },
-  {
-    path: "/warm-beverages",
-    name: "WarmBeverages",
-    component: WarmBeverages,
   },
   {
     path: "/rolls",
@@ -36,6 +25,16 @@ const routes = [
     path: "/cookies",
     name: "Cookies",
     component: Cookies,
+  },
+  {
+    path: "/cold-drinks",
+    name: "ColdDrinks",
+    component: ColdDrinks,
+  },
+  {
+    path: "/warm-beverages",
+    name: "WarmBeverages",
+    component: WarmBeverages,
   },
 ];
 

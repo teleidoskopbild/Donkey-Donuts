@@ -18,9 +18,9 @@
           <ul
             class="hidden md:flex space-x-6 justify-center text-white text-xl absolute left-1/2 transform -translate-x-1/2"
           >
-            <li>
+            <!-- <li>
               <router-link to="/" class="hover:font-bold">Home</router-link>
-            </li>
+            </li> -->
             <li>
               <router-link to="/donuts" class="hover:font-bold"
                 >Donuts</router-link
@@ -76,14 +76,14 @@
 
         <!-- Dropdown Menu für kleine Bildschirme -->
         <ul v-if="isOpen" class="md:hidden text-center mt-4">
-          <li>
+          <!-- <li>
             <router-link
               to="/"
               class="block py-2 px-4 text-white hover:font-bold"
               @click="toggleMenu"
               >Home</router-link
             >
-          </li>
+          </li> -->
           <li>
             <router-link
               to="/donuts"
@@ -129,6 +129,49 @@
 
       <router-view />
     </div>
+    <footer class="bg-blue-500 p-10 fixed bottom-0 w-full text-white">
+      <div class="flex justify-between" @click="toggleLocations">
+        <div>
+          <h3 class="text-xl font-bold">Donkey Donuts</h3>
+          <p>The best donuts in town!</p>
+        </div>
+
+        <div
+          class="flex items-center cursor-pointer absolute left-1/2 transform -translate-x-1/2"
+        >
+          <ul>
+            <li class="text-center">
+              {{ locationsVisible ? "" : "Our Locations: Click here!" }}
+            </li>
+            <li class="">
+              {{
+                locationsVisible
+                  ? ""
+                  : "2025 Donkey Donuts | All Rights Reserved"
+              }}
+            </li>
+          </ul>
+        </div>
+        <div v-if="locationsVisible" class="-mt-6">
+          <ul class="text-center fixed left-1/2 transform -translate-x-1/2">
+            <li>Main Street 15, Berlin</li>
+            <li>Donut Way 12, Hamburg</li>
+            <li>Donut Street 45, Munich</li>
+            <li class="mt-2">2025 Donkey Donuts | All Rights Reserved</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="text-white font-bold">Follow Us:</a></li>
+            <li><a href="#" class="text-white">Facebook</a></li>
+            <li><a href="#" class="text-white">Instagram</a></li>
+            <li><a href="#" class="text-white">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Toggle locations visibility -->
+    </footer>
   </div>
 </template>
 
@@ -139,11 +182,15 @@ export default {
     return {
       isOpen: false,
       loading: true,
+      locationsVisible: false,
     };
   },
   methods: {
     toggleMenu() {
       this.isOpen = !this.isOpen;
+    },
+    toggleLocations() {
+      this.locationsVisible = !this.locationsVisible;
     },
   },
   mounted() {
