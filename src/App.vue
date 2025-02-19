@@ -11,34 +11,44 @@
     <div v-else>
       <nav class="bg-blue-500 p-6">
         <!-- Normale Navigation für größere Bildschirme -->
-        <ul class="hidden md:flex space-x-6 justify-center text-white text-xl">
-          <li>
-            <router-link to="/" class="hover:font-bold">Home</router-link>
-          </li>
-          <li>
-            <router-link to="/donuts" class="hover:font-bold"
-              >Donuts</router-link
-            >
-          </li>
-          <li>
-            <router-link to="/rolls" class="hover:font-bold">Rolls</router-link>
-          </li>
-          <li>
-            <router-link to="/cookies" class="hover:font-bold"
-              >Cookies</router-link
-            >
-          </li>
-          <li>
-            <router-link to="/cold-drinks" class="hover:font-bold"
-              >Cold Drinks</router-link
-            >
-          </li>
-          <li>
-            <router-link to="/warm-beverages" class="hover:font-bold"
-              >Warm Beverages</router-link
-            >
-          </li>
-        </ul>
+        <div class="flex items-center">
+          <span class="hidden md:block text-2xl text-white font-bold">
+            Donkey Donuts
+          </span>
+          <ul
+            class="hidden md:flex space-x-6 justify-center text-white text-xl absolute left-1/2 transform -translate-x-1/2"
+          >
+            <li>
+              <router-link to="/" class="hover:font-bold">Home</router-link>
+            </li>
+            <li>
+              <router-link to="/donuts" class="hover:font-bold"
+                >Donuts</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/rolls" class="hover:font-bold"
+                >Rolls</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/cookies" class="hover:font-bold"
+                >Cookies</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/cold-drinks" class="hover:font-bold"
+                >Cold Drinks</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/warm-beverages" class="hover:font-bold"
+                >Warm Beverages</router-link
+              >
+            </li>
+          </ul>
+        </div>
+
         <!-- Hamburger Button für kleine Bildschirme -->
         <div class="flex items-center justify-between">
           <button @click="toggleMenu" class="md:hidden text-white">
@@ -58,7 +68,7 @@
             ></div>
           </button>
           <span
-            class="md:hidden text-xl text-white font-bold absolute left-1/2 transform -translate-x-1/2"
+            class="md:hidden text-2xl text-white font-bold absolute left-1/2 transform -translate-x-1/2"
           >
             Donkey Donuts
           </span>

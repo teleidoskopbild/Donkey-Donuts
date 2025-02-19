@@ -1,0 +1,16 @@
+[
+  {
+    "id": "warm1",
+    "name": "Coffee",
+    "image": "/images/warm/warm1.jpg",
+    "category": "Classic",
+    "description": "Delicious hot Coffee"
+  },
+  {
+    "id": "warm2",
+    "name": "Hot Chocolate",
+    "image": "/images/warm/warm2.jpg",
+    "category": "Chocolate",
+    "description": "Rich hot Chocolate"
+  }
+]
