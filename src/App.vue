@@ -9,14 +9,16 @@
     </div>
 
     <div v-else>
-      <nav class="bg-blue-500 p-6">
+      <nav class="bg-blue-500 p-8">
         <!-- Normale Navigation für größere Bildschirme -->
         <div class="flex items-center">
-          <span class="hidden md:block text-2xl text-white font-bold">
+          <span
+            class="hidden text-xl md:block md:text-2xl text-white font-bold"
+          >
             Donkey Donuts
           </span>
           <ul
-            class="hidden md:flex space-x-6 justify-center text-white text-xl absolute left-1/2 transform -translate-x-1/2"
+            class="hidden md:flex space-x-6 justify-center text-white md:text-xl absolute left-1/2 transform -translate-x-1/2"
           >
             <!-- <li>
               <router-link to="/" class="hover:font-bold">Home</router-link>
@@ -68,7 +70,7 @@
             ></div>
           </button>
           <span
-            class="md:hidden text-2xl text-white font-bold absolute left-1/2 transform -translate-x-1/2"
+            class="md:hidden text-2xl text-white font-bold absolute left-1/2 transform -translate-x-1/2 text-center"
           >
             Donkey Donuts
           </span>
@@ -129,21 +131,26 @@
 
       <router-view />
     </div>
+
     <footer class="bg-blue-500 p-10 fixed bottom-0 w-full text-white">
-      <div class="flex justify-between" @click="toggleLocations">
-        <div>
+      <div
+        class="flex flex-col content-end lg:justify-between lg:flex-row"
+        @click="toggleLocations"
+        @mouseleave="locationsVisible && toggleLocations()"
+      >
+        <div class="sm:flex sm:justify-center hidden sm:block sm:mb-4">
           <h3 class="text-xl font-bold">Donkey Donuts</h3>
-          <p>The best donuts in town!</p>
+          <p class="hidden">The best donuts in town!</p>
         </div>
 
         <div
-          class="flex items-center cursor-pointer absolute left-1/2 transform -translate-x-1/2"
+          class="text-base mb-6 md:mb-0 md:items-center cursor-pointer md:fixed md:left-1/2 md:transform md:-translate-x-1/2 md:text-lg"
         >
           <ul>
-            <li class="text-center">
+            <li class="hidden md:block text-center">
               {{ locationsVisible ? "" : "Our Locations: Click here!" }}
             </li>
-            <li class="">
+            <li class="text-xs md:text-base text-center">
               {{
                 locationsVisible
                   ? ""
@@ -153,24 +160,44 @@
           </ul>
         </div>
         <div v-if="locationsVisible" class="-mt-6">
-          <ul class="text-center fixed left-1/2 transform -translate-x-1/2">
+          <ul
+            class="text-base mb-4 text-xs text-center fixed sm:left-1/2 transform sm:-translate-x-1/2 sm:text-base"
+          >
             <li>Main Street 15, Berlin</li>
             <li>Donut Way 12, Hamburg</li>
             <li>Donut Street 45, Munich</li>
             <li class="mt-2">2025 Donkey Donuts | All Rights Reserved</li>
           </ul>
         </div>
-        <div>
-          <ul class="flex space-x-4">
-            <li><a href="#" class="text-white font-bold">Follow Us:</a></li>
-            <li><a href="#" class="text-white">Facebook</a></li>
-            <li><a href="#" class="text-white">Instagram</a></li>
-            <li><a href="#" class="text-white">Twitter</a></li>
+        <div class="flex justify-center">
+          <ul class="mt-4 text-center flex space-x-4">
+            <li>
+              <a href="#"
+                ><img
+                  src="/facebook.svg"
+                  alt="Facebook"
+                  class="w-6 h-6 inline invert"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="/instagram.svg"
+                  alt="Instagram"
+                  class="w-6 h-6 inline invert"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="/twitter.svg"
+                  alt="Twitter"
+                  class="w-6 h-6 inline invert"
+              /></a>
+            </li>
           </ul>
         </div>
       </div>
-
-      <!-- Toggle locations visibility -->
     </footer>
   </div>
 </template>
