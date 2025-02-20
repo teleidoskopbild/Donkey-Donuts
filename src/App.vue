@@ -5,7 +5,7 @@
       v-if="loading"
       class="fixed inset-0 bg-blue-500 flex justify-center items-center text-white text-2xl z-50"
     >
-      Loading...
+      <div class="loading-bar">Loading</div>
     </div>
 
     <div v-else>
@@ -267,20 +267,39 @@ export default {
 
     let loadedImages = 0;
 
-    images.forEach((imgSrc) => {
-      const img = new Image();
-      img.src = imgSrc;
-      img.onload = () => {
-        loadedImages++;
-        console.log(`Loading: ${imgSrc}`);
-        if (loadedImages === images.length) {
-          console.log("All images loaded.");
-          this.loading = false;
-        }
-      };
+    images.forEach((imgSrc, index) => {
+      setTimeout(() => {
+        const img = new Image();
+        img.src = imgSrc;
+        img.onload = () => {
+          loadedImages++;
+          console.log(`Loading: ${imgSrc}`);
+          if (loadedImages === images.length) {
+            console.log("All images loaded.");
+            this.loading = false;
+          }
+        };
+      });
     });
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.loading-bar {
+  font-size: 24px;
+  color: white;
+  display: inline-block;
+  animation: fadeInOut 1.5s infinite;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+</style>
