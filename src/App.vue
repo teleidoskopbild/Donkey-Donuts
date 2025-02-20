@@ -13,16 +13,13 @@
         <!-- Normale Navigation für größere Bildschirme -->
         <div class="flex md:items-center lg:justify-between">
           <span
-            class="hidden text-xl md:block md:text-2xl text-white font-bold"
+            class="hidden text-xl lg:block md:text-2xl text-white font-bold"
           >
             Donkey Donuts
           </span>
           <ul
-            class="hidden md:flex space-x-6 md:justify-end lg:justify-start text-white md:text-xl absolute left-1/2 transform -translate-x-1/2"
+            class="hidden md:flex md:space-x-16 md:justify-end lg:justify-start text-white md:text-xl absolute left-1/2 transform -translate-x-1/2"
           >
-            <!-- <li>
-              <router-link to="/" class="hover:font-bold">Home</router-link>
-            </li> -->
             <li>
               <router-link to="/donuts" class="hover:font-bold"
                 >Donuts</router-link
