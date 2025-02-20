@@ -1,5 +1,11 @@
-# Vue 3 + Vite
+# DONKEY DONUTS
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- a responsive donut-website to try out vue.js
+- tailwind.css for styling
+- pics are all ai-generated
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+# SCREENSHOTS
+![Screenshot from 2025-02-20 10-40-34](https://github.com/user-attachments/assets/eec96259-cf2a-44d5-ae8a-2c6845230ed7)
+<img src="https://github.com/user-attachments/assets/74e35b00-afda-4054-88c3-3edeb8e8507f" width="500">
+<img src="https://github.com/user-attachments/assets/213fb443-1e30-4c04-9ff5-b961f087bfa2" width="500">
+
