@@ -144,7 +144,7 @@
           class="text-base mb-6 md:mb-0 items-center md:items-center cursor-pointer md:fixed md:left-1/2 md:transform md:-translate-x-1/2 md:text-lg"
         >
           <ul>
-            <li class="hidden md:block text-center">
+            <li class="text-xs md:block text-center">
               {{ locationsVisible ? "" : "Our Locations: Click here!" }}
             </li>
             <li class="text-xs md:text-base text-center">
@@ -158,7 +158,7 @@
         </div>
         <div v-if="locationsVisible">
           <ul
-            class="text-base text-center fixed left-1/2 transform -translate-x-1/2"
+            class="md:text-base text-center md:fixed md:left-1/2 md:transform md:-translate-x-1/2"
           >
             <li>Main Street 15, Berlin</li>
             <li>Donut Way 12, Hamburg</li>
