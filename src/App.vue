@@ -129,6 +129,36 @@
       <router-view />
     </div>
 
+    <div
+      v-if="showNewsletterPopup"
+      class="fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center z-50"
+    >
+      <div class="flex flex-col md:flex-row">
+        <img class="w-102 md:w-84 h-auto" src="/ddnewsletter.jpeg" />
+        <div class="flex flex-col bg-amber-400 p-14 shadow-lg text-center">
+          <h2 class="text-lg font-bold">SUBSCRIBE TO OUR NEWSLETTER!</h2>
+          <p class="text-base">Win delicious prices!</p>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="bg-white mt-4 p-2 border rounded text-center"
+          />
+          <button
+            @click="closePopup"
+            class="cursor-pointer bg-blue-400 mt-4 p-2 text-white text-center rounded"
+          >
+            SIGN UP
+          </button>
+          <button
+            @click="closePopup"
+            class="cursor-pointer underline mt-4 p-2 text-black text-center rounded"
+          >
+            NO THANKS
+          </button>
+        </div>
+      </div>
+    </div>
+
     <footer class="bg-blue-500 p-4 fixed bottom-0 w-full text-white">
       <div
         class="flex flex-col content-end sm:justify-between md:flex-row"
@@ -207,6 +237,7 @@ export default {
       isOpen: false,
       loading: true,
       locationsVisible: false,
+      showNewsletterPopup: false,
     };
   },
   methods: {
@@ -215,6 +246,9 @@ export default {
     },
     toggleLocations() {
       this.locationsVisible = !this.locationsVisible;
+    },
+    closePopup() {
+      this.showNewsletterPopup = false;
     },
   },
   mounted() {
@@ -281,6 +315,9 @@ export default {
         };
       });
     });
+    setTimeout(() => {
+      this.showNewsletterPopup = true;
+    }, 5000);
   },
 };
 </script>
