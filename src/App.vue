@@ -203,7 +203,7 @@
                 ><img
                   src="/facebook.svg"
                   alt="Facebook"
-                  class="w-6 h-6 inline invert"
+                  class="w-6 h-6 inline invert hover:scale-150 transition-transform"
               /></a>
             </li>
             <li>
@@ -211,7 +211,7 @@
                 ><img
                   src="/instagram.svg"
                   alt="Instagram"
-                  class="w-6 h-6 inline invert"
+                  class="w-6 h-6 inline invert hover:scale-150 transition-transform"
               /></a>
             </li>
             <li>
@@ -219,7 +219,7 @@
                 ><img
                   src="/twitter.svg"
                   alt="Twitter"
-                  class="w-6 h-6 inline invert"
+                  class="w-6 h-6 inline invert hover:scale-150 transition-transform"
               /></a>
             </li>
           </ul>
